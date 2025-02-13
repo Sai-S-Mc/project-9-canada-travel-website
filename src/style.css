@@ -5,7 +5,11 @@
 
 body {
   font-family: var(--default-font);
-  background-color: #1a3724;
+  background: linear-gradient(rgba(18, 30, 14, 0.886), rgba(18, 30, 14, 0.886)),
+    url("/media/body-texture.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -16,7 +20,22 @@ body {
 
 header {
   text-align: center;
-  padding: 120px 20px;
+  padding: 180px 20px;
+  background-image: linear-gradient(
+      rgba(86, 144, 215, 0.359),
+      rgba(0, 0, 0, 0.473),
+      rgba(0, 0, 0, 0.458)
+    ),
+    url("/media/canada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+}
+
+.above-heading {
+  letter-spacing: 5px;
+  font-weight: 500;
 }
 
 h1,
@@ -40,9 +59,32 @@ header a {
   margin: 40px 0;
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: #2a465e;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all ease-in-out 300ms;
+}
+header a:hover {
+  color:#3f8482;
 }
 
 p {
   font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 90px 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  header a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 }
