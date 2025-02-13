@@ -1,11 +1,48 @@
+:root {
+  --heading-font: "Noto Serif Telugu", serif;
+  --default-font: "Kanit", serif;
+}
+
 body {
+  font-family: var(--default-font);
+  background-color: #1a3724;
+}
+
+.container {
+  max-width: 1400px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header {
   text-align: center;
+  padding: 120px 20px;
 }
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  line-height: 1.8;
+}
+
 h1 {
-  font-family: "Noto Serif Telugu", serif;
+  margin: 10px 0 0;
   font-weight: 800;
+  font-size: 80px;
 }
+
+h2 {
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  margin: 40px 0;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
 p {
-  font-family: "Kanit", serif;
   font-weight: 300;
 }
