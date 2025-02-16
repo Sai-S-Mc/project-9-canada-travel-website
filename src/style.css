@@ -5,20 +5,14 @@
 
 body {
   font-family: var(--default-font);
-  background: linear-gradient(rgba(18, 30, 14, 0.886), rgba(18, 30, 14, 0.886)),
-    url("/media/body-texture.avif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container {
-  max-width: 1400px;
-  background-color: white;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
   text-align: center;
   padding: 180px 20px;
   background-image: linear-gradient(
@@ -27,6 +21,9 @@ header {
       rgba(0, 0, 0, 0.458)
     ),
     url("/media/canada.jpg");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),
+    url("/media/canada.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -54,6 +51,15 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 22px;
+}
+
+p,
+a {
+  font-size: 17px;
+}
+
 header a {
   display: inline-block;
   margin: 40px 0;
@@ -65,22 +71,49 @@ header a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   transition: all ease-in-out 300ms;
 }
+
 header a:hover {
-  color:#3f8482;
+  color: #3f8482;
 }
 
 p {
   font-weight: 300;
 }
 
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.92)),
+    url("/media/footer-background.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 85%;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-gap: 60px;
+  padding: 80px 20px;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer a {
+  transition: all ease-in-out 300ms;
+  color: #3f8482;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
 
 @media (max-width: 800px) {
   header {
     padding: 60px 20px;
   }
 
-  .above-heading{
-    font-size: 12px ;
+  .above-heading {
+    font-size: 12px;
     font-weight: 600;
   }
 
@@ -96,12 +129,17 @@ p {
     padding: 6px 12px;
     font-size: 14px;
   }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 40px 20px;
+  }
 }
 
-
-@media(max-width:320px){
-  h1{
+@media (max-width: 320px) {
+  h1 {
     line-height: 1;
-    padding: 10px 0;
+    padding: 18px 0;
   }
 }
