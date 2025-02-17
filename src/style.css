@@ -13,6 +13,7 @@ body {
 }
 
 .two-columns{
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -90,13 +91,15 @@ a {
   font-size: 17px;
 }
 
+section, footer{
+  padding: 80px 60px;
+}
+
 section p {
   font-weight: 300;
 }
 
 section.first {
-  padding: 80px 30px;
-  display: grid;
   grid-row-gap: 30px;
   grid-column-gap: 60px;
 }
@@ -117,10 +120,8 @@ section.first p {
 
 section.second {
   background-color: #f5f5f5;
-  padding: 50px 0;
 }
 .outer-grid {
-  display: grid;
   grid-gap: 30px;
 }
 section.second h3 {
@@ -128,7 +129,6 @@ section.second h3 {
 }
 .inner-grid {
   padding: 0 20px 20px;
-  display: grid;
   grid-gap: 20px;
 }
 .inner-grid img {
@@ -140,7 +140,6 @@ section.second h3 {
 }
 
 section.third {
-  padding: 80px 20px;
 }
 .third h3 {
   text-align: center;
@@ -202,7 +201,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr;
   grid-gap: 60px;
-  padding: 80px 20px;
 }
 footer h3,
 footer p {
@@ -254,11 +252,12 @@ footer a:hover {
     font-weight: 600;
   }
 
-  .section-heading {
-    font-size: 18px;
+  section, footer {
+    padding: 60px;
   }
 
-  section.first {
+  .section-heading {
+    font-size: 18px;
   }
   section.first img {
     margin: 0 auto;
@@ -282,12 +281,10 @@ footer a:hover {
 
   .third .cards-wrapper {
     grid-row-gap: 60px;
-    padding: 0 60px;
   }
 
   footer {
     grid-gap: 0;
-    padding: 40px 30px;
   }
 }
 
