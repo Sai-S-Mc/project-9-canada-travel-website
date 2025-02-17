@@ -147,6 +147,9 @@ section.third {
 .third h3 {
   text-align: center;
 }
+.third .section-heading{
+  padding-bottom: 23px;
+}
 .cards-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -247,6 +250,10 @@ footer a:hover {
     font-weight: 600;
   }
 
+  .section-heading {
+    font-size: 18px;
+  }
+
   section.first {
     grid-template-columns: 1fr;
   }
@@ -255,10 +262,6 @@ footer a:hover {
   }
   section.first div {
     margin-top: 30px;
-  }
-
-  .section-heading {
-    font-size: 18px;
   }
 
   section.second h3 {
@@ -273,6 +276,12 @@ footer a:hover {
   }
   .inner-grid.season-row-responsive {
     margin-bottom: 10px;
+  }
+
+  .third .cards-wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 60px;
+    padding: 0 60px;
   }
 
   footer {
