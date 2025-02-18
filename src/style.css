@@ -12,8 +12,10 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-.two-columns {
+.grid {
   display: grid;
+}
+.two-columns {
   grid-template-columns: 1fr 1fr;
 }
 
@@ -140,7 +142,7 @@ section.second h3 {
 .inner-grid img:hover {
   cursor: zoom-in;
   transform: scale(1.2);
-  filter: brightness(120%) hue-rotate(10deg) ;
+  filter: brightness(120%) hue-rotate(10deg);
 }
 .grid-first-row {
   margin-bottom: 20px;
@@ -153,7 +155,6 @@ section.second h3 {
   padding-bottom: 23px;
 }
 .cards-wrapper {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 60px;
 }
@@ -208,7 +209,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 85%;
-  display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr;
   grid-gap: 60px;
 }
