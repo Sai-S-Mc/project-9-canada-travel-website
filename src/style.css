@@ -168,10 +168,11 @@ section.second h3 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.card img {
-  max-width: 100%;
-  padding: 0;
+.card img,
+.embed {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .card-body {
   padding: 20px 15px;
@@ -292,6 +293,14 @@ footer a:hover {
 
   .third .cards-wrapper {
     grid-row-gap: 60px;
+  }
+  .card{
+    border-top:1px solid rgba(204, 204, 204, 0.137);
+    border-left:1px solid rgba(204, 204, 204, 0.137);
+    border-right:1px solid rgba(204, 204, 204, 0.137);
+  }
+  .card img{
+    display: none;
   }
 
   footer {
