@@ -93,6 +93,7 @@ footer {
 }
 .first {
   padding-top: 160px;
+  align-items: center;
 }
 .last {
   padding-bottom: 160px;
