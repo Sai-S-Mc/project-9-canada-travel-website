@@ -322,7 +322,7 @@ footer a:hover {
   .third .cards-wrapper {
     grid-row-gap: 60px;
   }
-  .card img {
+  .third .card img {
     display: none;
   }
 
