@@ -338,8 +338,9 @@ footer a:hover {
   .third .cards-wrapper {
     grid-row-gap: 60px;
   }
-  .third .card img {
-    display: none;
+  .card-header {
+    aspect-ratio: 3/1;
+    grid-template-columns: 1fr 2fr;
   }
 
   .insta-embed {
