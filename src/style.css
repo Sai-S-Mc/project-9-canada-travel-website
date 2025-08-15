@@ -263,6 +263,10 @@ footer a:hover {
   .two-columns-large {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card-header {
+    aspect-ratio: 2/1;
+    grid-template-columns: 1.5fr 1fr;
+  }
 }
 
 @media (max-width: 900px) {
