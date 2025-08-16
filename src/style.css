@@ -353,8 +353,14 @@ footer a:hover {
   }
 }
 
+@media (max-width: 576px) {
+  .card-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 476px) {
-  section {
+ a section {
     padding: 60px 20px;
   }
   section.fourth {
