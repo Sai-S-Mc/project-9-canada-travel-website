@@ -264,10 +264,10 @@ footer a:hover {
   .two-columns-large {
     grid-template-columns: repeat(2, 1fr);
   }
-  .card-header {
+  /* .card-header {
     aspect-ratio: 2/1;
     grid-template-columns: 1.5fr 1fr;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
@@ -339,10 +339,10 @@ footer a:hover {
   .third .cards-wrapper {
     grid-row-gap: 60px;
   }
-  .card-header {
+  /* .card-header {
     aspect-ratio: 3/1;
     grid-template-columns: 1fr 2fr;
-  }
+  } */
 
   .insta-embed {
     display: flex;
@@ -355,9 +355,9 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
-  .card-header {
+  /* .card-header {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 
 @media (max-width: 476px) {
