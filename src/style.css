@@ -171,12 +171,11 @@ section.first p {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .third .card-header img,
 .third .card-header .embed {
   width: 100%;
   height: 100%;
-  max-width: auto;
-  max-height: 250px;
 }
 
 .third .card-body {
@@ -382,4 +381,8 @@ footer a:hover {
   h3 {
     font-size: 20px;
   }
+}
+
+.hide {
+  display: none;
 }
