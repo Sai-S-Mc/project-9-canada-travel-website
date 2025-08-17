@@ -382,6 +382,13 @@ footer a:hover {
   }
 }
 
+@media (max-width: 350px) {
+  .third .card-header img,
+  .third .card-header .embed {
+    max-height: 160px;
+  }
+}
+
 @media (max-width: 320px) {
   h1 {
     line-height: 1;
@@ -390,5 +397,10 @@ footer a:hover {
 
   h3 {
     font-size: 20px;
+  }
+
+  .third .card-header img,
+  .third .card-header .embed {
+    max-height: 120px;
   }
 }
