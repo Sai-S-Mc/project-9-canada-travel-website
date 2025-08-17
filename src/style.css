@@ -111,8 +111,8 @@ section p {
 }
 
 section.first {
-  grid-row-gap: 30px;
-  grid-column-gap: 60px;
+  row-gap: 30px;
+  column-gap: 60px;
 }
 section.first img {
   width: 100%;
@@ -132,11 +132,11 @@ section.first p {
   text-align: center;
 }
 .second .outer-grid {
-  grid-gap: 70px;
+  gap: 70px;
 }
 .second .inner-grid {
   padding: 0 0 20px;
-  grid-gap: 20px;
+  gap: 20px;
 }
 .second .inner-grid img {
   width: 100%;
@@ -156,7 +156,7 @@ section.first p {
   padding-bottom: 23px;
 }
 .third .cards-wrapper {
-  grid-column-gap: 60px;
+  column-gap: 60px;
 }
 .third .card {
   display: flex;
@@ -209,7 +209,7 @@ section.first p {
 }
 
 .fourth .grid {
-  grid-gap: 60px;
+  gap: 60px;
   padding-top: 23px;
 }
 .insta-embed {
@@ -221,7 +221,7 @@ section.first p {
 }
 .last .grid {
   padding-top: 23px;
-  grid-gap: 50px;
+  gap: 50px;
 }
 .last .video-embed {
   width: 100%;
@@ -235,7 +235,7 @@ footer {
   background-repeat: no-repeat;
   background-position: 85%;
   grid-template-columns: 1fr 1.5fr 1.5fr;
-  grid-gap: 60px;
+  gap: 60px;
 }
 footer h3,
 footer p {
@@ -326,7 +326,7 @@ footer a:hover {
     margin-bottom: 15px;
   }
   .second .outer-grid {
-    grid-gap: 0;
+    gap: 0;
   }
   .second .inner-grid {
     gap: 30px;
@@ -336,7 +336,7 @@ footer a:hover {
   }
 
   .third .cards-wrapper {
-    grid-row-gap: 80px;
+    row-gap: 80px;
   }
   .card-header {
     grid-template-columns: 1fr 2fr;
@@ -352,7 +352,7 @@ footer a:hover {
   }
 
   footer {
-    grid-gap: 15px;
+    gap: 15px;
   }
 }
 
@@ -363,7 +363,8 @@ footer a:hover {
 }
 
 @media (max-width: 476px) {
-  main section, footer {
+  main section,
+  footer {
     padding: 60px 30px;
   }
   .first {
