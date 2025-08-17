@@ -363,8 +363,15 @@ footer a:hover {
 }
 
 @media (max-width: 476px) {
-  a section {
-    padding: 60px 20px;
+  main section, footer {
+    padding: 60px 30px;
+  }
+  .first {
+    padding-top: 60px;
+  }
+
+  .last {
+    padding-bottom: 60px;
   }
   section.fourth {
     display: none;
