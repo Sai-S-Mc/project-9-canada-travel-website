@@ -88,6 +88,18 @@ a {
   font-size: 17px;
 }
 
+.third .address-link,
+.last .youtube-link {
+  color: var(--primary-text-color);
+  text-decoration-color: rgb(116, 250, 207);
+  text-underline-offset: 5px;
+  transition: all ease-in-out 400ms;
+}
+.third .address-link:hover,
+.last .youtube-link:hover {
+  text-decoration-color: #3f8482;
+}
+
 main section,
 footer {
   padding: 100px 60px;
@@ -189,15 +201,6 @@ section.first p {
 .third .card p {
   margin: 2px 0 12px;
 }
-.third .address-link {
-  color: var(--primary-text-color);
-  text-decoration-color: rgb(116, 250, 207);
-  text-underline-offset: 5px;
-  transition: all ease-in-out 400ms;
-}
-.third .address-link:hover {
-  text-decoration-color: #3f8482;
-}
 .third .card-footer {
   display: block;
   text-align: center;
@@ -237,8 +240,18 @@ section.first p {
   width: 100%;
   aspect-ratio: 16/9;
 }
-.last .video-title{
+.last .video-title {
   display: none;
+}
+.last p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+.last .youtube-link {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+  font-size: 14px;
 }
 
 footer {
@@ -392,10 +405,9 @@ footer a:hover {
   section.last {
     background-color: #f5f5f5;
   }
-  .last .video-title{
+  .last .video-title {
     display: block;
-    text-align: center;
-    margin: 2px;
+    margin: 2px auto;
   }
 }
 
@@ -404,7 +416,7 @@ footer a:hover {
   .third .card-header .embed {
     max-height: 160px;
   }
-  .last .video-embed{
+  .last .video-embed {
     aspect-ratio: 1/1;
   }
 }
