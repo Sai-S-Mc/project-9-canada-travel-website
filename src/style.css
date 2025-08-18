@@ -237,6 +237,9 @@ section.first p {
   width: 100%;
   aspect-ratio: 16/9;
 }
+.last .video-title{
+  display: none;
+}
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 0.91)),
@@ -380,15 +383,19 @@ footer a:hover {
   .first {
     padding-top: 60px;
   }
-
-  .last {
-    padding-bottom: 60px;
-  }
   section.fourth {
     display: none;
   }
+  .last {
+    padding-bottom: 60px;
+  }
   section.last {
     background-color: #f5f5f5;
+  }
+  .last .video-title{
+    display: block;
+    text-align: center;
+    margin: 2px;
   }
 }
 
