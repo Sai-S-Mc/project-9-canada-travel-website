@@ -404,6 +404,9 @@ footer a:hover {
   .third .card-header .embed {
     max-height: 160px;
   }
+  .last .video-embed{
+    aspect-ratio: 1/1;
+  }
 }
 
 @media (max-width: 320px) {
