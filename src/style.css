@@ -21,6 +21,8 @@ body {
   box-shadow: rgba(0, 0, 0, 0.501) 5px 5px 15px;
 }
 
+.instagram-media {
+  box-shadow: rgba(0, 0, 0, 0.501) 5px 5px 15px !important;
 }
 
 .grid {
