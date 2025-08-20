@@ -35,7 +35,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-a{
+a {
   max-width: fit-content;
 }
 
@@ -300,6 +300,12 @@ footer a {
 }
 footer a:hover {
   color: rgba(255, 255, 255, 0.75);
+}
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 @media (max-width: 1240px) {
